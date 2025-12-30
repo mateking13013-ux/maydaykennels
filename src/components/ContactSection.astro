@@ -1,7 +1,5 @@
 ---
 // ContactSection component
-import { puppies } from '../data/puppies';
-const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
 ---
 
 <section class="contact-section" id="contact">
@@ -17,51 +15,39 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
         <h3 class="form-title">Puppy Inquiry Form</h3>
         <form class="contact-form" id="homeContactForm">
           <input type="hidden" name="access_key" value="77a850a4-59d1-4154-b69b-efa430e7b015">
-          <input type="hidden" name="subject" value="New Puppy Inquiry - Santa's Little Wieners">
-          <input type="hidden" name="from_name" value="Santa's Little Wieners Website">
+          <input type="hidden" name="subject" value="New Puppy Inquiry - Montessa Kennel">
+          <input type="hidden" name="from_name" value="Montessa Kennel Website">
 
           <div class="form-row">
             <div class="form-group">
               <label for="homeFirstName">First Name</label>
-              <input type="text" id="homeFirstName" name="firstName" placeholder="Your first name" required>
+              <input type="text" id="homeFirstName" name="firstName" required>
             </div>
             <div class="form-group">
               <label for="homeLastName">Last Name</label>
-              <input type="text" id="homeLastName" name="lastName" placeholder="Your last name" required>
+              <input type="text" id="homeLastName" name="lastName" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="homeEmail">Email</label>
-              <input type="email" id="homeEmail" name="email" placeholder="your@email.com" required>
+              <input type="email" id="homeEmail" name="email" required>
             </div>
             <div class="form-group">
               <label for="homePhone">Phone</label>
-              <input type="tel" id="homePhone" name="phone" placeholder="(123) 456-7890">
+              <input type="tel" id="homePhone" name="phone">
             </div>
           </div>
 
           <div class="form-group">
             <label for="homeAddress">Address</label>
-            <input type="text" id="homeAddress" name="address" placeholder="Your full address (Street, City, State, Zip)">
-          </div>
-
-          <div class="form-group">
-            <label for="homePuppyInquiry">Puppy Inquiry</label>
-            <p class="available-puppies-label"><strong>Available Puppies:</strong> {puppyOptions.map(p => p.name).join(', ')}</p>
-            <select id="homePuppyInquiry" name="puppyInquiry">
-              <option value="">Select a puppy</option>
-              {puppyOptions.map((puppy) => (
-                <option value={puppy.name}>{puppy.name} - {puppy.sex}</option>
-              ))}
-              <option value="General Inquiry">General Inquiry / Not Sure Yet</option>
-            </select>
+            <input type="text" id="homeAddress" name="address">
           </div>
 
           <div class="form-group">
             <label for="homeMessage">Message</label>
-            <textarea id="homeMessage" name="message" placeholder="Tell us about yourself and what you're looking for in a puppy..."></textarea>
+            <textarea id="homeMessage" name="message"></textarea>
           </div>
 
           <button type="submit" class="btn-submit">
@@ -80,7 +66,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
           </div>
           <div class="info-content">
             <h4>Email Us</h4>
-            <p><a href="mailto:info@santaslittlewieners.com">info@santaslittlewieners.com</a></p>
+            <p><a href="mailto:info@montessakennel.co.za">info@montessakennel.co.za</a></p>
           </div>
         </div>
 
@@ -161,7 +147,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
 
   .section-badge {
     display: inline-block;
-    background: #095136;
+    background: #f19645;
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 50px;
@@ -178,7 +164,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
   }
 
   .section-title span {
-    color: #B22222;
+    color: #e08839;
   }
 
   .section-subtitle {
@@ -221,7 +207,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
   .info-icon {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #095136, #0a6b47);
+    background: linear-gradient(135deg, #f19645, #e08839);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -250,13 +236,13 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
   }
 
   .info-content a {
-    color: #095136;
+    color: #f19645;
     text-decoration: none;
     font-weight: 500;
   }
 
   .info-content a:hover {
-    color: #B22222;
+    color: #e08839;
   }
 
   .info-note {
@@ -264,7 +250,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
     border-radius: 12px;
     padding: 1.25rem;
     margin-top: 1rem;
-    border-left: 3px solid #095136;
+    border-left: 3px solid #f19645;
   }
 
   .info-note h4 {
@@ -335,7 +321,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #095136;
+    border-color: #f19645;
     background: white;
   }
 
@@ -360,7 +346,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background: #095136;
+    background: #f19645;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -373,7 +359,7 @@ const puppyOptions = puppies.map(p => ({ name: p.name, sex: p.sex }));
   }
 
   .btn-submit:hover {
-    background: #B22222;
+    background: #e08839;
     transform: translateY(-2px);
   }
 

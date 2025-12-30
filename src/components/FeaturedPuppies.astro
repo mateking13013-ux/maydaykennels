@@ -1,6 +1,12 @@
 ---
-// FeaturedPuppies component
-import { featuredPuppies } from '../data/puppies';
+// FeaturedPuppies component - displays featured puppies from WP media
+const featuredPuppies = [
+  { name: 'Tank', image: 'https://savannakennels.co.za/wp-content/uploads/2025/08/TANK.jpg' },
+  { name: 'Victor', image: 'https://savannakennels.co.za/wp-content/uploads/2025/05/VICTOR-2.jpeg' },
+  { name: 'Misha', image: 'https://savannakennels.co.za/wp-content/uploads/2025/05/MISHA-6.jpeg' },
+  { name: 'Lottie', image: 'https://savannakennels.co.za/wp-content/uploads/2025/05/LOTTIE-11.jpeg' },
+  { name: 'Bruno', image: 'https://savannakennels.co.za/wp-content/uploads/2025/01/MOM-AND-DAD00.jpg' },
+];
 ---
 
 <section class="featured-section">
@@ -9,7 +15,7 @@ import { featuredPuppies } from '../data/puppies';
       Featured Puppies
       <span class="bone-icon">🦴</span>
     </h2>
-    <p class="section-subtitle">Explore Our Adorable Dachshund Puppies Ready for Their Forever Homes!</p>
+    <p class="section-subtitle">Explore Our Adorable Puppies Ready for Their Forever Homes!</p>
   </div>
 
   <div class="puppies-container">
@@ -25,15 +31,11 @@ import { featuredPuppies } from '../data/puppies';
           </div>
           <div class="card-content">
             <h3 class="puppy-name">{puppy.name}</h3>
-            <div class="puppy-price">
-              <span class="current-price">${puppy.price}</span>
-              <span class="old-price">${puppy.price + 100}</span>
-            </div>
             <div class="card-stats">
               <span>Available</span>
               <span>Ready Now</span>
             </div>
-            <a href="/available-puppies" class="btn-contact">Contact Us</a>
+            <a href="/breeds" class="btn-contact">View Breeds</a>
           </div>
         </article>
       ))}
@@ -45,7 +47,7 @@ import { featuredPuppies } from '../data/puppies';
   .featured-section {
     display: block;
     font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background-color: #095136;
+    background-color: #f19645;
     background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M20 20c2.5 0 4.5 2 4.5 4.5S22.5 29 20 29s-4.5-2-4.5-4.5S17.5 20 20 20zm20 0c2.5 0 4.5 2 4.5 4.5S42.5 29 40 29s-4.5-2-4.5-4.5S37.5 20 40 20zm-10 8c2.5 0 4.5 2 4.5 4.5S32.5 37 30 37s-4.5-2-4.5-4.5S27.5 28 30 28zm-5 10c3.5 0 6.5 3 6.5 6.5S28.5 51 25 51s-6.5-3-6.5-6.5S21.5 38 25 38zm10 0c3.5 0 6.5 3 6.5 6.5S38.5 51 35 51s-6.5-3-6.5-6.5S31.5 38 35 38zm-5 14c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7z'/%3E%3C/g%3E%3C/svg%3E");
     padding: 3rem 1.5rem;
     position: relative;
@@ -122,7 +124,7 @@ import { featuredPuppies } from '../data/puppies';
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: #B12322;
+    background: #e08839;
     color: white;
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
@@ -148,27 +150,8 @@ import { featuredPuppies } from '../data/puppies';
   .puppy-name {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #B12322;
-    margin: 0 0 0.25rem;
-  }
-
-  .puppy-price {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.35rem;
-  }
-
-  .current-price {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #333;
-  }
-
-  .old-price {
-    font-size: 0.9rem;
-    color: #B12322;
-    text-decoration: line-through;
+    color: #e08839;
+    margin: 0 0 0.5rem;
   }
 
   .card-stats {
@@ -182,7 +165,7 @@ import { featuredPuppies } from '../data/puppies';
   .btn-contact {
     display: block;
     width: 100%;
-    background: #095136;
+    background: #f19645;
     color: white;
     padding: 0.5rem;
     border: none;
@@ -196,7 +179,7 @@ import { featuredPuppies } from '../data/puppies';
   }
 
   .btn-contact:hover {
-    background: #B22222;
+    background: #e08839;
   }
 
   @media (max-width: 1200px) {

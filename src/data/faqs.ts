@@ -5,24 +5,24 @@ export interface Faq {
 
 export const faqs: Faq[] = [
   {
-    question: 'Is a Dachshund a good breed?',
-    answer: 'Dachshunds are affectionate and playful dogs that require training and care.'
+    question: 'Is a puppy a good breed?',
+    answer: 'puppys are affectionate and playful dogs that require training and care.'
   },
   {
-    question: 'Is a Dachshund Puppy good for beginners?',
-    answer: 'Yes Dachshunds are great dogs for first time dog owners. They are affectionate and easy to get along with.'
+    question: 'Is a puppy Puppy good for beginners?',
+    answer: 'Yes puppys are great dogs for first time dog owners. They are affectionate and easy to get along with.'
   },
   {
-    question: 'Do Dachshunds make good family pets?',
-    answer: 'Not only are Dachshunds amazing companions but they are also great family pets. They tend to get along with other pets and good with kids.'
+    question: 'Do puppys make good family pets?',
+    answer: 'Not only are puppys amazing companions but they are also great family pets. They tend to get along with other pets and good with kids.'
   },
   {
-    question: 'Do Dachshund puppies smell bad?',
+    question: 'Do our puppies smell bad?',
     answer: 'With proper grooming and care, your puppy will not have a foul smell. You should consider taking your dog to a professional groomer from time to time. Also, prioritize using the best products like dog shampoos.'
   },
   {
-    question: 'What not to do with Dachshunds?',
-    answer: 'Dachshunds should not be made to jump very high. They can easily damage their backs due to their skeletal structure.'
+    question: 'What not to do with puppys?',
+    answer: 'puppys should not be made to jump very high. They can easily damage their backs due to their skeletal structure.'
   }
 ];
 

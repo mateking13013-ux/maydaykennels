@@ -17,7 +17,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Charlie is a playful and spirited Dachshund puppy with a heart of gold. His stunning light chocolate and cream dapple coat with beautiful markings and pale pinkish nose makes him truly stand out. He loves exploring his surroundings, playing with toys, and snuggling up for cuddle time. Charlie has a confident yet gentle personality that will bring endless joy to his forever family',
+    description: 'Charlie is a playful and spirited puppy with a heart of gold. His stunning light chocolate and cream dapple coat with beautiful markings and pale pinkish nose makes him truly stand out. He loves exploring his surroundings, playing with toys, and snuggling up for cuddle time. Charlie has a confident yet gentle personality that will bring endless joy to his forever family',
     coat: 'Light chocolate/cream dapple puppy with a pale (pinkish) nose and soft, feathery ears. Silky medium-length coat with tan/cream markings.'
   },
   {
@@ -27,7 +27,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Bianca is a beautiful and affectionate Dachshund puppy with a sweet, loving personality. Her gorgeous chocolate dapple coat with cream and gray marbling is absolutely stunning, and her playful nature will keep you entertained. She enjoys being the center of attention and loves to give kisses. Bianca is perfect for anyone looking for a loyal and loving companion',
+    description: 'Bianca is a beautiful and affectionate puppy with a sweet, loving personality. Her gorgeous chocolate dapple coat with cream and gray marbling is absolutely stunning, and her playful nature will keep you entertained. She enjoys being the center of attention and loves to give kisses. Bianca is perfect for anyone looking for a loyal and loving companion',
     coat: 'Chocolate dapple puppy with lighter cream/gray marbling and tan points. Long, feathery ears with a soft medium-to-long coat.'
   },
   {
@@ -37,7 +37,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Doris is an adorable chocolate dapple Dachshund with the sweetest personality. Her smooth short coat is easy to maintain and her compact size makes her perfect for cuddling. She has a calm temperament but loves playtime too. Doris is looking for a forever home where she can shower her family with love and affection',
+    description: 'Doris is an adorable chocolate dapple puppy with the sweetest personality. Her smooth short coat is easy to maintain and her compact size makes her perfect for cuddling. She has a calm temperament but loves playtime too. Doris is looking for a forever home where she can shower her family with love and affection',
     coat: 'Chocolate dapple puppy with tan points on the face and legs. Smooth, short coat with a long body and floppy ears.'
   },
   {
@@ -67,7 +67,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Darcy is a graceful and affectionate Dachshund puppy with a calm, loving personality. Her elegant cream and silver dapple coat with tan points and soft medium-length fur is truly unique. She enjoys peaceful moments and gentle play. Darcy would make an excellent companion for someone seeking a sweet, devoted friend',
+    description: 'Darcy is a graceful and affectionate puppy with a calm, loving personality. Her elegant cream and silver dapple coat with tan points and soft medium-length fur is truly unique. She enjoys peaceful moments and gentle play. Darcy would make an excellent companion for someone seeking a sweet, devoted friend',
     coat: 'Cream/silver dapple puppy with tan points on the face and paws. Floppy ears and a soft medium-length coat.'
   },
   {
@@ -77,7 +77,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Max is a gorgeous light cream Dachshund with feathery ears and a darker nose. His soft fluffy medium-length coat and sweet face will melt your heart. He has a friendly, outgoing personality and loves to play. Max is looking for an active family who will enjoy adventures and cuddles with this handsome boy',
+    description: 'Max is a gorgeous light cream puppy with feathery ears and a darker nose. His soft fluffy medium-length coat and sweet face will melt your heart. He has a friendly, outgoing personality and loves to play. Max is looking for an active family who will enjoy adventures and cuddles with this handsome boy',
     coat: 'Light cream puppy with a soft, fluffy medium-length coat and feathery ears. Cream face and legs with a darker nose.'
   },
   {
@@ -107,7 +107,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Gus is a handsome chocolate and tan Dachshund with classic good looks. His smooth short coat and playful, energetic personality make him a joy to be around. He loves running, playing, and then relaxing with his favorite humans. Gus is ready to bring laughter and love to his new home',
+    description: 'Gus is a handsome chocolate and tan puppy with classic good looks. His smooth short coat and playful, energetic personality make him a joy to be around. He loves running, playing, and then relaxing with his favorite humans. Gus is ready to bring laughter and love to his new home',
     coat: 'Solid chocolate-brown puppy with tan points on the eyebrows, cheeks, and paws. Smooth, short coat with floppy ears.'
   },
   {
@@ -117,7 +117,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Luie is a classic black and tan Dachshund with a sleek short coat and bright, alert eyes. He is curious, intelligent, and always ready for fun. His loyal personality makes him a wonderful companion who will follow you everywhere. Luie is eager to find his forever family',
+    description: 'Luie is a classic black and tan puppy with a sleek short coat and bright, alert eyes. He is curious, intelligent, and always ready for fun. His loyal personality makes him a wonderful companion who will follow you everywhere. Luie is eager to find his forever family',
     coat: 'Black-and-tan puppy with a smooth, short coat. Tan eyebrows, tan muzzle, and tan paws with long floppy ears.'
   },
   {
@@ -127,7 +127,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Luga is a sweet chocolate and tan Dachshund with a soft silky medium-length coat and gentle nature. He loves attention and being pampered by his family. His calm demeanor and loving personality make him perfect for anyone seeking a devoted companion. Luga cannot wait to share his love with you',
+    description: 'Luga is a sweet chocolate and tan puppy with a soft silky medium-length coat and gentle nature. He loves attention and being pampered by his family. His calm demeanor and loving personality make him perfect for anyone seeking a devoted companion. Luga cannot wait to share his love with you',
     coat: 'Chocolate-and-tan puppy with a soft, silky medium-length coat. Floppy, feathery ears and lighter tan markings on the face and paws.'
   },
   {
@@ -147,7 +147,7 @@ export const puppies: Puppy[] = [
     age: '10 Weeks',
     status: 'Available',
     price: 750,
-    description: 'Polly is a classic black and tan Dachshund with a glossy short coat and petite frame. She is the perfect lap dog who loves nothing more than being close to her humans. Her sweet, gentle nature makes her ideal for families or individuals seeking a loving companion. Polly is ready to steal your heart',
+    description: 'Polly is a classic black and tan puppy with a glossy short coat and petite frame. She is the perfect lap dog who loves nothing more than being close to her humans. Her sweet, gentle nature makes her ideal for families or individuals seeking a loving companion. Polly is ready to steal your heart',
     coat: 'Black-and-tan puppy with a smooth, short coat. Tan eyebrows, tan muzzle, and tan legs with long floppy ears.'
   }
 ];

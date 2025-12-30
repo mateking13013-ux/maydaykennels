@@ -19,28 +19,28 @@
       <div class="form-row">
         <div class="form-group">
           <label for="popup-name">Your Name *</label>
-          <input type="text" id="popup-name" name="name" required placeholder="John Doe">
+          <input type="text" id="popup-name" name="name" required>
         </div>
         <div class="form-group">
           <label for="popup-email">Email Address *</label>
-          <input type="email" id="popup-email" name="email" required placeholder="john@example.com">
+          <input type="email" id="popup-email" name="email" required>
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
           <label for="popup-phone">Phone Number</label>
-          <input type="tel" id="popup-phone" name="phone" placeholder="+1 (555) 000-0000">
+          <input type="tel" id="popup-phone" name="phone">
         </div>
         <div class="form-group">
           <label for="popup-location">Your Location</label>
-          <input type="text" id="popup-location" name="location" placeholder="City, State">
+          <input type="text" id="popup-location" name="location">
         </div>
       </div>
 
       <div class="form-group full-width">
         <label for="popup-message">Message *</label>
-        <textarea id="popup-message" name="message" rows="4" required placeholder="Tell us about yourself and why you're interested in this puppy..."></textarea>
+        <textarea id="popup-message" name="message" rows="4" required></textarea>
       </div>
 
       <button type="submit" class="popup-submit">
@@ -72,7 +72,6 @@
       puppyNameSpan.textContent = puppyName;
       formSubject.value = `Inquiry about ${puppyName}`;
       formPuppyName.value = puppyName;
-      messageField.placeholder = `I'm interested in ${puppyName}. Tell us about yourself...`;
     }
 
     popup.setAttribute('aria-hidden', 'false');
@@ -206,7 +205,7 @@
   }
 
   .popup-close:hover {
-    color: #B22222;
+    color: #e08839;
   }
 
   .popup-header {
@@ -222,7 +221,7 @@
   }
 
   .popup-title span {
-    color: #095136;
+    color: #f19645;
   }
 
   .popup-subtitle {
@@ -271,7 +270,7 @@
   .form-group input:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #095136;
+    border-color: #f19645;
     box-shadow: 0 0 0 3px rgba(9, 81, 54, 0.1);
   }
 
@@ -281,7 +280,7 @@
   }
 
   .popup-submit {
-    background: #095136;
+    background: #f19645;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -294,7 +293,7 @@
   }
 
   .popup-submit:hover {
-    background: #B22222;
+    background: #e08839;
   }
 
   .popup-submit:disabled {
@@ -310,7 +309,7 @@
   .success-icon {
     width: 60px;
     height: 60px;
-    background: #095136;
+    background: #f19645;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -336,7 +335,7 @@
   }
 
   .popup-close-btn {
-    background: #095136;
+    background: #f19645;
     color: white;
     border: none;
     padding: 0.75rem 2rem;
@@ -348,7 +347,7 @@
   }
 
   .popup-close-btn:hover {
-    background: #B22222;
+    background: #e08839;
   }
 
   @media (max-width: 600px) {
