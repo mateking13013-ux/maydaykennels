@@ -21,10 +21,10 @@ const slides = [
         </div>
       </div>
 
-      <a href="/breeds" class="slider-overlay-btn">
-        Browse Our Breeds
+      <a href="/contact" class="slider-overlay-btn">
+        Contact Us
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm11 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-8.5-4c.83 0 1.5-.67 1.5-1.5S9.83 10.5 9 10.5s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm6 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-3-3c.83 0 1.5-.67 1.5-1.5S12.83 8 12 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"/>
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
         </svg>
       </a>
 
@@ -86,11 +86,14 @@ const slides = [
       </div>
 
       <div class="hero-cta">
-        <a href="/breeds" class="btn btn-primary">
-          Browse Our Breeds
+        <a href="/about-us" class="btn btn-primary">
+          About Us
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm11 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-8.5-4c.83 0 1.5-.67 1.5-1.5S9.83 10.5 9 10.5s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm6 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-3-3c.83 0 1.5-.67 1.5-1.5S12.83 8 12 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"/>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
           </svg>
+        </a>
+        <a href="/health-guarantee" class="btn btn-secondary">
+          Health Guarantee
         </a>
       </div>
     </div>
@@ -407,6 +410,23 @@ const slides = [
     width: 18px;
     height: 18px;
     fill: currentColor;
+  }
+
+  .btn-secondary {
+    background: #f19645;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background: #e08839;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(241, 150, 69, 0.3);
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 1024px) {
