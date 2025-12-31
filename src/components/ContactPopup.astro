@@ -14,7 +14,9 @@
     <form id="popup-contact-form" class="popup-form">
       <input type="hidden" name="access_key" value="48571cae-cf74-465c-8053-4835599cd4a8">
       <input type="hidden" name="subject" id="form-subject" value="Puppy Inquiry">
-      <input type="hidden" name="puppy_name" id="form-puppy-name" value="">
+      <input type="hidden" name="from_name" value="Montessa Kennel Website">
+      <input type="hidden" name="Puppy_Interested_In" id="form-puppy-name" value="">
+      <input type="hidden" name="Source_Page" id="form-source-page" value="">
 
       <div class="form-row">
         <div class="form-group">
@@ -66,12 +68,20 @@
     const puppyNameSpan = document.getElementById('popup-puppy-name');
     const formSubject = document.getElementById('form-subject');
     const formPuppyName = document.getElementById('form-puppy-name');
+    const formSourcePage = document.getElementById('form-source-page');
     const messageField = document.getElementById('popup-message');
+
+    // Set source page URL
+    formSourcePage.value = window.location.href;
 
     if (puppyName) {
       puppyNameSpan.textContent = puppyName;
-      formSubject.value = `Inquiry about ${puppyName}`;
+      formSubject.value = `Inquiry about ${puppyName} - Montessa Kennel`;
       formPuppyName.value = puppyName;
+    } else {
+      puppyNameSpan.textContent = 'Our Puppies';
+      formSubject.value = 'New Puppy Inquiry - Montessa Kennel';
+      formPuppyName.value = 'General Inquiry';
     }
 
     popup.setAttribute('aria-hidden', 'false');

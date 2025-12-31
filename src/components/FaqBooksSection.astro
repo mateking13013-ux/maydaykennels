@@ -27,16 +27,6 @@ import { faqs } from '../data/faqs';
       </div>
     </div>
 
-    <div class="books-promo">
-      <div class="book-image">
-        <img src="/images/The-Happy-puppy-You.png" alt="The Happy puppy & You Book">
-      </div>
-      <div class="book-content">
-        <h3>Discover More Ways to Enhance Your puppy Experience</h3>
-        <p>Discover more ways to enhance your puppy experience with our latest books! Filled with valuable tips, tasty recipes, and insights into care, these guides are perfect for every owner. I also offer free books for all. Check them out today and strengthen your bond with your furry friend!</p>
-        <a href="/books" class="books-btn">My Books</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -57,7 +47,6 @@ import { faqs } from '../data/faqs';
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 3rem;
-    margin-bottom: 4rem;
     align-items: start;
   }
 
@@ -126,62 +115,6 @@ import { faqs } from '../data/faqs';
     max-width: 400px;
   }
 
-  .books-promo {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 3rem;
-    align-items: center;
-    background: white;
-    padding: 3rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  }
-
-  .book-image {
-    width: 250px;
-    flex-shrink: 0;
-  }
-
-  .book-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  }
-
-  .book-content h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #2a2a2a;
-    margin: 0 0 1rem;
-    line-height: 1.3;
-  }
-
-  .book-content p {
-    font-size: 1rem;
-    color: #5a5a5a;
-    line-height: 1.7;
-    margin: 0 0 1.5rem;
-  }
-
-  .books-btn {
-    display: inline-block;
-    background: white;
-    color: #f19645;
-    padding: 0.85rem 2rem;
-    border: 2px solid #f19645;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .books-btn:hover {
-    background: #f19645;
-    color: white;
-  }
-
   @media (max-width: 900px) {
     .faq-health-row {
       grid-template-columns: 1fr;
@@ -190,18 +123,6 @@ import { faqs } from '../data/faqs';
 
     .health-column {
       order: -1;
-    }
-
-    .books-promo {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .book-image {
-      width: 200px;
-      margin: 0 auto;
     }
   }
 
@@ -221,10 +142,6 @@ import { faqs } from '../data/faqs';
 
     .health-column h3 {
       font-size: 1.25rem;
-    }
-
-    .book-content h3 {
-      font-size: 1.35rem;
     }
   }
 </style>
