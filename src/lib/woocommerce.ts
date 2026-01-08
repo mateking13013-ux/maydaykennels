@@ -1,6 +1,6 @@
 // WooCommerce API utility for fetching products and categories
 
-const WC_API_URL = 'https://savannakennels.co.za/wp-json/wc/v3';
+const WC_API_URL = 'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-json/wc/v3';
 const CONSUMER_KEY = 'ck_9f59526df32b4cf788abcbee7770287c3fbf58af';
 const CONSUMER_SECRET = 'cs_b15f89346664ba2ae468570db3792c169e91cda0';
 
