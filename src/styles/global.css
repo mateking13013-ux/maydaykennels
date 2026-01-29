@@ -1,24 +1,23 @@
 /* ================================
-   Santa's Little Wieners
+   Mayday Kennels
    Main Stylesheet
-   Holiday Theme 2024
 ================================ */
 
 /* CSS Custom Properties (Theme) */
 :root {
-  /* Primary Colors - Warm Christmas Red */
-  --color-primary: #7118e2;
-  --color-primary-light: #D94444;
-  --color-primary-dark: #8B0000;
+  /* Primary Colors - Trustworthy Blue */
+  --color-primary: #2E86AB;
+  --color-primary-light: #4A9EC2;
+  --color-primary-dark: #1B5E7B;
 
-  /* Secondary Colors - Forest Green */
-  --color-secondary: #228B22;
-  --color-secondary-light: #32CD32;
-  --color-secondary-dark: #006400;
+  /* Secondary Colors - Warm Amber */
+  --color-secondary: #E8985E;
+  --color-secondary-light: #F0B07E;
+  --color-secondary-dark: #C47A3F;
 
   /* Accent Colors */
-  --color-gold: #DAA520;
-  --color-cream: #FFFDD0;
+  --color-gold: #D4A653;
+  --color-cream: #FFF8F0;
 
   /* Neutrals */
   --color-white: #FFFFFF;
@@ -167,12 +166,12 @@ img {
 .btn-primary {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: var(--color-white);
-  box-shadow: 0 4px 15px rgba(178, 34, 34, 0.3);
+  box-shadow: 0 4px 15px rgba(46, 134, 171, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(178, 34, 34, 0.4);
+  box-shadow: 0 8px 25px rgba(46, 134, 171, 0.4);
   color: var(--color-white);
 }
 

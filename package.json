@@ -1,5 +1,5 @@
 {
-  "name": "santas-little-wieners",
+  "name": "maydaykennels",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -10,6 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.0"
+    "astro": "^5.17.0"
   }
 }

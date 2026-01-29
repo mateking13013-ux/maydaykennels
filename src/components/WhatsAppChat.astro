@@ -1,12 +1,12 @@
 ---
 // WhatsApp Live Chat Button
 const whatsappNumber = "27713044651";
-const message = "Hi! I'm interested in your puppies at Jarocas Kennels.";
+const message = "Hi! I'm interested in your puppies at Mayday Kennels.";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 ---
 
 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="whatsapp-chat" aria-label="Chat on WhatsApp">
-  <img src="/images/image copy 2.png" alt="Chat with us on WhatsApp" />
+  <img src="/images/520-5201641_whatsapp-chat-whatsapp-hd-png-download (1).png" alt="Chat with us on WhatsApp" />
 </a>
 
 <style>
@@ -16,19 +16,18 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(m
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none;
+    transition: transform 0.3s ease;
     overflow: hidden;
   }
 
   .whatsapp-chat:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
 
   .whatsapp-chat img {
@@ -39,8 +38,8 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(m
 
   @media (max-width: 768px) {
     .whatsapp-chat {
-      width: 60px;
-      height: 60px;
+      width: 75px;
+      height: 75px;
       bottom: 15px;
       right: 15px;
     }
