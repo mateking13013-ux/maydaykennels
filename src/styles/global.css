@@ -104,7 +104,7 @@ h5 { font-size: 1rem; }
 h6 { font-size: 0.875rem; }
 
 p {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 0;
 }
 
 a {
@@ -192,10 +192,7 @@ main {
   min-height: 100vh;
 }
 
-/* Section Spacing */
-section {
-  padding: var(--spacing-3xl) 0;
-}
+/* Section Spacing — handled per component */
 
 /* Responsive Typography */
 @media (max-width: 768px) {

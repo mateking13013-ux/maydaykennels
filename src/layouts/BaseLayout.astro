@@ -1,9 +1,9 @@
 ---
 import '../styles/global.css';
-import TopBar from '../components/TopBar.astro';
 import MainHeader from '../components/MainHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import WhatsAppChat from '../components/WhatsAppChat.astro';
+import ContactPopup from '../components/ContactPopup.astro';
 
 interface Props {
   title: string;
@@ -64,7 +64,6 @@ const {
   <title>{title}</title>
 </head>
 <body>
-  <TopBar />
   <MainHeader />
 
   <main>
@@ -72,6 +71,7 @@ const {
   </main>
 
   <SiteFooter />
+  <ContactPopup />
   <WhatsAppChat />
 </body>
 </html>
