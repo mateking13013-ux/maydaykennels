@@ -115,7 +115,7 @@ const testimonialNotes = [
         and a smooth handoff from our home to yours.
       </p>
       <div class="hero-actions">
-        <a href="/available-puppies" class="btn-home btn-home-primary">Browse Puppies</a>
+        <a href="/contact" class="btn-home btn-home-primary">Browse Puppies</a>
         <a href="/contact" class="btn-home btn-home-secondary">Start an Inquiry</a>
       </div>
       <div class="hero-metrics">
@@ -136,10 +136,10 @@ const testimonialNotes = [
 
     <div class="hero-visual">
       <div class="photo-main">
-        <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/08/TANK.jpg" alt="Healthy puppy from Paws Happiness" loading="eager" />
+        <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/08/TANK.jpg" alt="Healthy puppy from Paws Paradise" loading="eager" />
       </div>
       <div class="photo-side">
-        <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/VICTOR-2.jpeg" alt="Paws Happiness puppy ready for a home" loading="lazy" />
+        <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/VICTOR-2.jpeg" alt="Paws Paradise puppy ready for a home" loading="lazy" />
       </div>
       <div class="floating-note">
         <p class="note-label">Next pickup window</p>
@@ -168,14 +168,14 @@ const testimonialNotes = [
       <p class="eyebrow">Available companions</p>
       <h2>Choose a personality, not just a photo.</h2>
       <p class="section-copy">These are our real available puppies. View all listings or click a puppy to inquire instantly.</p>
-      <a href="/available-puppies" class="section-link">View All Available Puppies</a>
+      <a href="/contact" class="section-link">Contact For Available Puppies</a>
     </div>
 
     <div class="puppy-grid">
       {featuredPups.map((pup) => (
         <article class="puppy-card">
           <button type="button" class="puppy-card-link" aria-label={`Inquire about ${pup.name}`} onclick={`openContactPopup('${pup.name.replace(/'/g, "\\'")}')`}>
-            <img src={pup.image} alt={`${pup.name} puppy from Paws Happiness`} loading="lazy" />
+            <img src={pup.image} alt={`${pup.name} puppy from Paws Paradise`} loading="lazy" />
             <div class="puppy-meta">
               <h3>{pup.name}</h3>
               <p class="puppy-summary">{pup.summary}.</p>
@@ -220,7 +220,7 @@ const testimonialNotes = [
       <a href="/about-us" class="btn-home btn-home-primary">See Our Story</a>
     </div>
     <div class="promise-photo">
-      <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/MISHA-6.jpeg" alt="Well socialized healthy puppy from Paws Happiness" loading="lazy" />
+      <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/MISHA-6.jpeg" alt="Well socialized healthy puppy from Paws Paradise" loading="lazy" />
     </div>
   </section>
 
@@ -248,7 +248,7 @@ const testimonialNotes = [
     <div class="spotlight-grid">
       {spotlightTestimonials.map((item) => (
         <article class="spotlight-card">
-          <img src={item.image} alt={`Paws Happiness ${item.family}`} loading="lazy" />
+          <img src={item.image} alt={`Paws Paradise ${item.family}`} loading="lazy" />
           <div class="spotlight-copy">
             <p class="spotlight-quote">"{item.quote}"</p>
             <p class="spotlight-family">{item.family}</p>
@@ -275,7 +275,7 @@ const testimonialNotes = [
   <section class="final-cta reveal">
     <h2>Ready to meet your puppy match?</h2>
     <p>Tell us what you are looking for and we will send your best options first.</p>
-    <a href="/contact" class="btn-home btn-home-secondary">Contact Paws Happiness</a>
+    <a href="/contact" class="btn-home btn-home-secondary">Contact Paws Paradise</a>
   </section>
 </div>
 
