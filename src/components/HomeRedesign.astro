@@ -1,20 +1,9 @@
 ---
 import { puppies } from '../data/puppies';
 
-const homePuppyImages = [
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/08/TANK.jpg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/VICTOR-2.jpeg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/MISHA-6.jpeg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/LOTTIE-11.jpeg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/01/MOM-AND-DAD00.jpg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/05/CHESS-6.jpeg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/04/HUDSON.jpg',
-  'https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/04/BRUGGE.jpg'
-];
-
-const featuredPups = puppies.slice(0, 8).map((puppy, index) => ({
+const featuredPups = puppies.slice(0, 8).map((puppy) => ({
   name: puppy.name,
-  image: homePuppyImages[index] || homePuppyImages[0],
+  image: puppy.image,
   summary: puppy.description.split('.')[0]
 }));
 

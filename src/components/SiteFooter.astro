@@ -1,3 +1,7 @@
+---
+import { WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER_E164 } from '../constants/contact';
+---
+
 <footer class="site-footer">
   <div class="footer-glow"></div>
 
@@ -11,8 +15,8 @@
         A family-focused puppy home built around transparency, healthy starts,
         and practical support for every new puppy parent.
       </p>
-      <a href="https://wa.me/27792257991" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
-        WhatsApp: 079 225 7991
+      <a href={`https://wa.me/${WHATSAPP_NUMBER_E164}`} target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+        WhatsApp: {WHATSAPP_NUMBER_DISPLAY}
       </a>
     </section>
 
