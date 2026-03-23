@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+import MainHeader from '../components/MainHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import WhatsAppChat from '../components/WhatsAppChat.astro';
+import ContactPopup from '../components/ContactPopup.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  ogUrl?: string;
+}
+
+const {
+  title,
+  description = "Paws Paradise - Find your perfect puppy companion. Ethically bred, health guaranteed puppies ready to bring joy to your home. Multiple breeds available.",
+  keywords = "puppies for sale, dog breeder, healthy puppies, puppy adoption, family puppies",
+  ogTitle,
+  ogDescription,
+  ogType = "website",
+  ogUrl
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords}>
+  <meta name="author" content="Paws Paradise">
+
+  <!-- Google tag (gtag.js) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8649N47RC6"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8649N47RC6');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M8Q7TR3V');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads (gtag.js) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-11011636949"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11011636949');
+  </script>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content={ogTitle || title}>
+  <meta property="og:description" content={ogDescription || description}>
+  <meta property="og:type" content={ogType}>
+  {ogUrl && <meta property="og:url" content={ogUrl}>}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <title>{title}</title>
+</head>
+<body>
+  <MainHeader />
+
+  <main>
+    <slot />
+  </main>
+
+  <SiteFooter />
+  <ContactPopup />
+  <WhatsAppChat />
+</body>
+</html>

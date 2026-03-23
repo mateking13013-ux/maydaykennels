@@ -1,0 +1,115 @@
+---
+// WhyChooseUs component — Icon feature strip on dark background
+const features = [
+  {
+    icon: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>`,
+    title: 'Health Guaranteed',
+    description: 'Every puppy is vet-checked, vaccinated, and comes with a comprehensive health guarantee.'
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`,
+    title: 'Family Raised',
+    description: 'Raised in our home with love, ensuring well-socialized puppies ready for family life.'
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>`,
+    title: 'Full Documentation',
+    description: 'Vaccination records, health certificates, and registration paperwork included.'
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>`,
+    title: 'Lifetime Support',
+    description: 'Ongoing guidance and support for the entire lifetime of your pet.'
+  }
+];
+---
+
+<section class="why-section">
+  <div class="why-container">
+    <div class="features-row">
+      {features.map((f) => (
+        <div class="feature">
+          <div class="feature-icon" set:html={f.icon}></div>
+          <h3 class="feature-title">{f.title}</h3>
+          <p class="feature-desc">{f.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-section {
+    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+    background: #0B3833;
+    padding: 4rem 1.5rem;
+  }
+
+  .why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .features-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(15, 118, 110, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    transition: all 0.3s ease;
+  }
+
+  .feature:hover .feature-icon {
+    background: #0F766E;
+    transform: translateY(-3px);
+  }
+
+  .feature-icon :global(svg) {
+    width: 26px;
+    height: 26px;
+    fill: #0F766E;
+    transition: fill 0.3s ease;
+  }
+
+  .feature:hover .feature-icon :global(svg) {
+    fill: white;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 0.5rem;
+  }
+
+  .feature-desc {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 900px) {
+    .features-row { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .why-section { padding: 3rem 1rem; }
+    .features-row { grid-template-columns: 1fr; gap: 1rem; }
+    .feature { padding: 1rem; }
+  }
+</style>

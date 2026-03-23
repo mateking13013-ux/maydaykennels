@@ -1,0 +1,147 @@
+---
+// AboutSection component — Split layout with stats
+---
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="https://deepskyblue-goldfinch-819888.hostingersite.com/wp-content/uploads/2025/08/DIGBY.jpg" alt="Beautiful puppy from Paws Paradise" loading="lazy">
+    </div>
+
+    <div class="about-content">
+      <span class="about-badge">About Us</span>
+      <h2 class="about-title">Spreading Joy, One Puppy at a Time</h2>
+      <p class="about-text">
+        Welcome to Paws Paradise. We specialize in raising healthy, happy, and well-socialized puppies from multiple breeds. For over a decade, our family has been dedicated to breeding lovable companions with the utmost care.
+      </p>
+      <p class="about-text">
+        Each puppy is raised in a loving home environment, ensuring they're ready to bring warmth and joy to your family for years to come.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Happy Families</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Health Guarantee</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24hr</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+    background: #ffffff;
+    padding: 5rem 1.5rem;
+  }
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-content {
+    padding: 1rem 0;
+  }
+
+  .about-badge {
+    display: inline-block;
+    background: rgba(15, 118, 110, 0.1);
+    color: #0F766E;
+    padding: 0.4rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
+  }
+
+  .about-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0B3833;
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5a5a5a;
+    margin: 0 0 1rem;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0F766E;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+    .about-container {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .about-image img { height: 350px; }
+  }
+
+  @media (max-width: 600px) {
+    .about { padding: 3rem 1rem; }
+    .about-title { font-size: 1.75rem; }
+    .about-stats { grid-template-columns: repeat(2, 1fr); }
+    .about-image img { height: 280px; }
+  }
+</style>

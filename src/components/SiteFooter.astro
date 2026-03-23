@@ -1,0 +1,211 @@
+---
+import { WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER_E164 } from '../constants/contact';
+---
+
+<footer class="site-footer">
+  <div class="footer-glow"></div>
+
+  <div class="footer-inner">
+    <section class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="/images/logopaws.png" alt="Paws Paradise logo" />
+      </div>
+      <h3>Paws Paradise</h3>
+      <p>
+        A family-focused puppy home built around transparency, healthy starts,
+        and practical support for every new puppy parent.
+      </p>
+      <a href={`https://wa.me/${WHATSAPP_NUMBER_E164}`} target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+        WhatsApp: {WHATSAPP_NUMBER_DISPLAY}
+      </a>
+    </section>
+
+    <section class="footer-links">
+      <h4>Explore</h4>
+      <a href="/">Home</a>
+      <a href="/contact">Available Puppies</a>
+      <a href="/about-us">About Us</a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/contact">Contact</a>
+    </section>
+
+    <section class="footer-links">
+      <h4>Guides</h4>
+      <a href="/health-guarantee">Health Guarantee</a>
+      <a href="/vaccinations">Vaccinations</a>
+      <a href="/pickup-delivery">Pickup and Delivery</a>
+      <a href="/sales-agreement">Sales Agreement</a>
+      <a href="/faqs">FAQs</a>
+    </section>
+
+    <section class="footer-links">
+      <h4>Contact</h4>
+      <a href="mailto:info@paradisepawsa.com">info@paradisepawsa.com</a>
+      <a href="/contact">Send Inquiry</a>
+      <p class="footer-note">Open daily by appointment.</p>
+      <p class="footer-note">Address shared after confirmed booking.</p>
+    </section>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Paws Paradise. All rights reserved.</p>
+    <div>
+      <a href="/sales-agreement">Terms</a>
+      <a href="/return-refund-policy">Returns</a>
+      <a href="/contact">Support</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(160deg, #0d4f49 0%, #0b3833 100%);
+    color: #e8fffa;
+    padding: 3.5rem 1rem 1rem;
+  }
+
+  .footer-glow {
+    position: absolute;
+    pointer-events: none;
+    inset: -40% auto auto 55%;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0));
+  }
+
+  .footer-inner {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 1.3rem;
+  }
+
+  .footer-logo-wrap {
+    width: 200px;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-brand img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .footer-brand h3 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footer-brand p {
+    margin: 0.7rem 0 1rem;
+    max-width: 36ch;
+    color: rgba(232, 255, 250, 0.88);
+    font-size: 0.95rem;
+  }
+
+  .footer-whatsapp {
+    display: inline-flex;
+    text-decoration: none;
+    color: #07261f;
+    background: #f7c25f;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.56rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-links h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.05rem;
+    font-family: var(--font-heading);
+  }
+
+  .footer-links a {
+    display: block;
+    margin-top: 0.62rem;
+    text-decoration: none;
+    color: rgba(232, 255, 250, 0.88);
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    color: #f7c25f;
+  }
+
+  .footer-note {
+    margin: 0.62rem 0 0;
+    color: rgba(232, 255, 250, 0.78);
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    max-width: 1240px;
+    margin: 2.2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(232, 255, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.84rem;
+    color: rgba(232, 255, 250, 0.7);
+  }
+
+  .footer-bottom div {
+    display: flex;
+    gap: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom a {
+    color: rgba(232, 255, 250, 0.9);
+    text-decoration: none;
+    font-size: 0.84rem;
+  }
+
+  @media (max-width: 1000px) {
+    .footer-inner {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .site-footer {
+      padding-top: 2.7rem;
+    }
+
+    .footer-brand img {
+      width: 130px;
+      height: auto;
+    }
+
+    .footer-logo-wrap {
+      width: 130px;
+      height: auto;
+    }
+
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
