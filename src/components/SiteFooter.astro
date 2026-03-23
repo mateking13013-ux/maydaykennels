@@ -1,5 +1,4 @@
 ---
-import { WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER_E164 } from '../constants/contact';
 ---
 
 <footer class="site-footer">
@@ -15,9 +14,6 @@ import { WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER_E164 } from '../constants/cont
         A family-focused puppy home built around transparency, healthy starts,
         and practical support for every new puppy parent.
       </p>
-      <a href={`https://wa.me/${WHATSAPP_NUMBER_E164}`} target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
-        WhatsApp: {WHATSAPP_NUMBER_DISPLAY}
-      </a>
     </section>
 
     <section class="footer-links">
@@ -113,17 +109,6 @@ import { WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER_E164 } from '../constants/cont
     max-width: 36ch;
     color: rgba(232, 255, 250, 0.88);
     font-size: 0.95rem;
-  }
-
-  .footer-whatsapp {
-    display: inline-flex;
-    text-decoration: none;
-    color: #07261f;
-    background: #f7c25f;
-    font-weight: 700;
-    border-radius: 999px;
-    padding: 0.56rem 1rem;
-    font-size: 0.85rem;
   }
 
   .footer-links h4 {
